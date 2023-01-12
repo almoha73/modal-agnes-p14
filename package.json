@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [ "dist", "README.md" ],
-  "repository": {    "type": "git",    "url": "URL_OF_YOUR_REPOSITORY"  },
+  "repository": {    "type": "git",    "url": "https://github.com/almoha73/modal-agnes-p14"  },
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
