@@ -1,5 +1,5 @@
 {
-  "name": "modal_agnes",
+  "name": "@almoha/modal_agnes",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
