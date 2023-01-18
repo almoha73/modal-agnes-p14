@@ -117,7 +117,7 @@ const ModalButton = styled.button.attrs((props) => ({
   }
 `;
 
-export const Modal = (props) => {
+const Modal = (props) => {
   const {
     setIsOpen,
     bodyColor, //body color base is neutral-100
@@ -188,3 +188,5 @@ export const Modal = (props) => {
     </>
   );
 };
+
+export default Modal

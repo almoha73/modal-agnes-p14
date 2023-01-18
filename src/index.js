@@ -1,10 +1,2 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./lib/examples/App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
-);
+import Modal from "./lib/components/Modal";
+export { Modal as default };

@@ -1,10 +1,10 @@
 {
 	"name": "@almoha/modalagnes",
 	"version": "0.1.5",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
+	"main": "build/static/js/main.14a19efe.js",
+	"module": "build/static/js/main.14a19efe.js",
 	"files": [
-		"dist",
+		"build",
 		"README.md"
 	],
 	"repository": {
