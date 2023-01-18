@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { keyframes, css } from "styled-components";
-import { StyledCloseIcon, StyledCircleIcon } from "../components/assets";
+import { StyledCloseIcon, StyledCircleIcon } from "./assets/icons";
 import { ColourShemes } from "./utils/themes";
 
 let animation = keyframes`
@@ -189,4 +189,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal
+export default Modal;
