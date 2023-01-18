@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { keyframes, css } from "styled-components";
-import { StyledCloseIcon, StyledCircleIcon } from "./assets/icons";
+import { StyledCloseIcon } from "./assets/icons/CloseIcon";
+import { StyledCircleIcon } from "./assets";
 import { ColourShemes } from "./utils/themes";
 
 let animation = keyframes`
