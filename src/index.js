@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import Modal from "./lib/components/Modal";
+import Modal from "./components/Modal";
+
+export default Modal;
 
 
 
