@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import Modal from "./components/Modal";
-
-export default Modal;
-
+import Modal from "./lib/components/Modal";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
