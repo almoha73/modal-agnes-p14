@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "../../lib/components/Modal";
+import Modal from "../components/Modal";
 import GlobalStyle from "../components/utils/GlobalStyle";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <button
+      {/* <button
         onClick={() => setIsOpen(true)}
         className="openModalBtn"
         style={{
@@ -18,7 +18,7 @@ const App = () => {
         }}
       >
         Open Modal
-      </button>
+      </button> */}
       {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
   );
