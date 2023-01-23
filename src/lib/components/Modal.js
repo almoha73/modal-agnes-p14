@@ -122,7 +122,7 @@ const Modal = (props) => {
   const {
     setIsOpen,
     bodyColor, //body color base is neutral-100
-    overlayColor, //overlay color base is neural-500
+    overlayColor, //overlay color base is neutral-500
     modalTitle, // modal title base is "Employee created"
     modalText, // modal text base is "If you want, you can create more !"
     button, // button base is green-300 with dark text and hover green-200
