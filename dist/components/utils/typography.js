@@ -1,4 +1,13 @@
+/**
+Define the primary font for the app
+@type {string}
+*/
 export const primaryFont = `'Roboto', sans-serif;`;
+
+/**
+Define the type scale for various elements
+@type {Object}
+*/
 export const TypeScale = {
   iconLarge: "3rem",
   iconBase: "2rem",
