@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Modal Component in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A styled modal component using the styled-components library. The component contains various styles for the different components.
 
-## Available Scripts
+The animation for the ModalBody is created using keyframes and styles for each component can be customized by passing dynamic values through the "attrs" method.
 
-In the project directory, you can run:
+## Properties
 
-### `npm start`
+What props can you add ?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`setIsOpen`: function to close the modal.\
+`modalTitle`: title displayed in the ModalContent (default: "Employee created").\
+`modalText`: text displayed in the ModalContent (default: "If you want, you can create more!").\
+`close`: whether to display the close icon in the alert component (default close color: "green-300").\
+`closecolor`: color of the close icon in the alert component.\
+`sizeclose`: size of the close icon (default: "header4").\
+`check`: display of the check icon in the Modal component.\
+`checkcolor`: color of the check mark.\
+`sizecheck`: size of the check mark (default: "iconLarge").\
+`animationBody`: enables the animation on the ModalBody.\
+`button`: display of a button in the Modal component (default button text: "Close", default button background color: "green-300", default button text color: "neutral-1000").\
+`buttonbg`: background color of the ModalButton.\
+`buttonText`: text of the button.\
+`buttonTextColor`: text color of the ModalButton.\
+`buttonbgHover`: background color of the ModalButton when hovered (default: "green-200").\
+`bodyColor`: background color of the modal (default: "neutral-100").\
+`overlayColor`: background color of the overlay (default: "neutral-500").
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to change the colours ?
 
-### `npm test`
+You have access to a large colour palette that you can write as in Tailwind Css.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The range goes from 50, 100, 200, ... up to 900 except for neutral
 
-### `npm run build`
+Les colours are:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- neutral: neutral-000 is white, neutral 1000 is black
+- green
+- red
+- blue
+- yellow
+  ... and others soon !!!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For example, if you want to change the colour of the close icon, you would add the props close to display the button and closecolor to change the color like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```jsx
+<Modal close closecolor="red-500" />
+```
 
-### `npm run eject`
+## You can change the icons size
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You have access to a different sizes that you can write.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here are the size:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `iconLarge`: 3rem,
+- `iconBase`: 2rem,
+- `header1`: 1.8rem,
+- `header2`: 1.6rem,
+- `header3`: 1.4rem,
+- `header4`: 1.2rem,
+- `header5`: 1.1rem,
+- `paragraph`: 1rem,
+- `helperText`: 0.8rem,
+- `copyrightText`: 0.7rem,
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For example, if you want to change the size of the close icon, you would add the props close to display the icon and sizeclose to change the size.
 
-## Learn More
+```jsx
+<Modal close sizeclose="header3" />
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Pay attention to upper and lower case when writing the props !!!

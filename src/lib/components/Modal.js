@@ -5,6 +5,31 @@ import { StyledCloseIcon } from "./assets/icons/CloseIcon";
 import { StyledCircleIcon } from "./assets";
 import { ColourShemes } from "./utils/themes";
 
+/**
+This is a code comment for the Modal component in React. The Modal component is styled using the styled-components library and contains different styles for the ModalContainer, ModalOverlay, ModalBody, ModalContent, ModalTitle, ModalText, and ModalButton.
+The keyframes are used to create the animation for the ModalBody and the styles for each component are passed dynamic values through the "attrs" method for more customizability.
+@param {Object} props - The properties passed to the Modal component.
+@property {function} setIsOpen - The function to close the modal.
+@property {string} modalTitle - Changes the title displayed in the ModalContent.Employee created' by default
+@property {string} modalText - Changes the text displayed in the ModalContent. 'If you want, you can create more !' by default
+@property {string} close - To determine whether to display the close icon in the alert component.The base color is closecolor="green-300".
+@property {string} closecolor - Changes the close icon color of the alert component. The base color is green-300. 
+@property {string} sizeclose - Changes the close icon size. sizeclose="header4" by default
+@property {boolean} check - Add the display of the check icon in the Modal component. 
+@property {string} checkcolor - Changes the color of the check mark.
+@property {string} sizecheck - Changes the size of the check mark. sizecheck="iconLarge" by default
+@property {boolean} animationBody - Enables the animation on the ModalBody 
+@property {boolean} button - Add the display of a button in the Modal component. The text displayed in the ModalButton. "Close" by default. buttonBg='green-300'by default. buttonTextColor='neutral-1000' by default
+@property {string} buttonbg - Changes the background color of the ModalButton. buttonBg='green-300' by default
+@property {string} buttonText - Changes the text of the button
+@property {string} buttonTextColor - Changes the text color of the ModalButton.buttonTextColor='neutral-1000' by default
+@property {string} buttonbgHover - Changes the background color of the ModalButton when hovered. buttonBgHover='green-200' by default
+@property {string} bodyColor - Change the background color of the modal. bodyColor='neutral-100' by default
+@property {string} overlayColor - Change the background color of the overlay. overlayColor='neutral-500' by default
+*/
+
+
+
 let animation = keyframes`
 0% {
     
@@ -121,22 +146,22 @@ const ModalButton = styled.button.attrs((props) => ({
 const Modal = (props) => {
   const {
     setIsOpen,
-    bodyColor, //body color base is neutral-100
-    overlayColor, //overlay color base is neutral-500
-    modalTitle, // modal title base is "Employee created"
-    modalText, // modal text base is "If you want, you can create more !"
-    button, // button base is green-300 with dark text and hover green-200
-    buttonText, // button text base is "Close"
+    bodyColor, 
+    overlayColor, 
+    modalTitle, 
+    modalText, 
+    button, 
+    buttonText, 
     buttonbg,
     buttonbgHover,
     buttonTextColor,
-    close, //close icon color base is green-300
+    close, 
     closecolor,
     sizeclose,
-    check, //check icon color base is green-300 and size "iconLarge"
+    check, 
     checkcolor,
     sizecheck,
-    animationBody, // translate X and Y animation
+    animationBody, 
   } = props;
 
   return (
