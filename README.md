@@ -4,6 +4,33 @@ A styled modal component using the styled-components library. The component cont
 
 The animation for the ModalBody is created using keyframes and styles for each component can be customized by passing dynamic values through the "attrs" method.
 
+## How to install the Modal
+
+You can find the npm package [here](https://www.npmjs.com/package/modalagnes73).\
+You can find the github repository [here](https://github.com/almoha73/modal-agnes-p14).
+
+```jsx
+npm install modalagnes73
+```
+```jsx
+import React, { Component } from 'react'
+import Modal from 'modalagnes73'
+
+const Exemple = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+return(
+    <>
+
+    {isOpen && <Modal setIsOpen={setIsOpen} close/>}
+    <button onClick={() => setIsOpen(true)}>Open</button>
+
+    </>
+)
+}
+```
+
 ## Properties
 
 What props can you add ?
