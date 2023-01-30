@@ -1,3 +1,8 @@
+/**
+Collection of color constants used in the project.
+@module Colors
+*/
+
 export const blue = {
 	"blue-50": "#DBEAFE",
 	"blue-100": "#DBEAFE",

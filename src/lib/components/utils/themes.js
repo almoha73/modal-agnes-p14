@@ -1,8 +1,9 @@
+/**
+@fileoverview Exports the ColourShemes for all the elements of the modal.
+@module ColourShemes
+*/
+
 import { blue, neutral, green, red, yellow } from "./colors";
-
-/// Colour Shemes for all the element of the modal
-
-
 
 export const ColourShemes = {
 	"green-50": green["green-50"],
